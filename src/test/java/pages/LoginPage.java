@@ -31,7 +31,7 @@ public class LoginPage {
         enterUsername(username);
         enterPassword(password);
         clickLogin();
-        return new ProductsPage(driver);
+        return new ProductsPage();
     }
 
 }
