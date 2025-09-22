@@ -31,7 +31,7 @@ public class Challenge12Test extends BaseTest {
 
         if (expectedResult) {
             // Successful login should go to ProductsPage
-            ProductsPage productsPage = new ProductsPage();
+            ProductsPage productsPage = new ProductsPage(driver);
             Assert.assertTrue(productsPage.isPageDisplayed(),
                     "Products page should be displayed for valid login");
         } else {

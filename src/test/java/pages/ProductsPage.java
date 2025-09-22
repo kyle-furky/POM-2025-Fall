@@ -9,16 +9,11 @@ public class ProductsPage {
     private By firstAddToCartButton=By.xpath("(//button[contains(text(),'Add to cart')])[1]");
     private By cartIcon=By.className("shopping_cart_link");
     private By firstCartITenName=By.className("inventory_item_name");
-
     private By productsTitle = By.cssSelector(".title");          // Header "Products"
     private By inventoryItems = By.className("inventory_item");   // All product items on the page
 
 
-
-
-
-
-    public void productsPage(WebDriver driver){
+    public ProductsPage(WebDriver driver){
         this.driver=driver;
     }
 
