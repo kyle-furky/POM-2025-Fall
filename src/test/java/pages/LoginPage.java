@@ -34,4 +34,7 @@ public class LoginPage {
         return new ProductsPage();
     }
 
+    public boolean isErrorDisplayed() {
+        return false;
+    }
 }
