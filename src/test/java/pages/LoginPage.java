@@ -31,6 +31,11 @@ public class LoginPage {
     public void clickLogin() {
         driver.findElement(loginButton).click();
     }
+    public ProductsPage clickLoginButton() {
+        driver.findElement(loginButton).click();
+        return null;
+    }
+
 
     // Combined login
     public ProductsPage loginAs(String username, String password) {
@@ -45,4 +50,6 @@ public class LoginPage {
         return driver.findElements(errorMessage).size() > 0
                 && driver.findElement(errorMessage).isDisplayed();
     }
+
+
 }
