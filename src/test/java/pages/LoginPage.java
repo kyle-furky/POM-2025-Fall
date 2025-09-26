@@ -11,6 +11,12 @@ public class LoginPage {
     private By passwordField = By.id("password");
     private By loginButton   = By.id("login-button");
     private By errorMessage  = By.cssSelector("h3[data-test='error']");
+        //get error message text (using this on Challenge16Test)
+        public String getErrorMessage(){
+            return driver.findElement(errorMessage).getText();
+        }
+
+
 
     // Constructor
     public LoginPage(WebDriver driver) {
@@ -50,6 +56,7 @@ public class LoginPage {
         return driver.findElements(errorMessage).size() > 0
                 && driver.findElement(errorMessage).isDisplayed();
     }
+
 
 
 }
