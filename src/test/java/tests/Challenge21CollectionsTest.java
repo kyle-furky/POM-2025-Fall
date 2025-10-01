@@ -31,8 +31,8 @@ public class Challenge21CollectionsTest {
         List<String> actualProducts=new ArrayList<>();
         actualProducts.add("backpack");
         actualProducts.add("bike light");
-        actualProducts.add("bold t-shirt");
-        actualProducts.add("backpack");
+        actualProducts.add("bolt t-shirt");
+
 
         //step2 expected product list from requirement
         List<String> expectedProducts= Arrays.asList(
@@ -66,11 +66,19 @@ public class Challenge21CollectionsTest {
 
 
 
+    /*
+    ✅ Quick Checklist:
+    Make sure findDuplicates() is not inside the testProductListValidation() method.
+    It must be declared at class level.
 
+    findDuplicates() checks for any repeated elements — a common QA check.
+    If any duplicates exist, the test fails and prints them in the console.
+    Finally, print success if all validations pass ✅
+     */
 
-
-
-
+    // PRODUCT ISIMLERI AYNI OLSA BILENE HATA VERIYOR
+    //Lists differ at element [0]: backpack != bolt t-shirt
+    // KODDA DEGISIKLIK YAPMAK GEREKIYOR, TAM ISE YARAMIYOR BU KOD
 
 
 
